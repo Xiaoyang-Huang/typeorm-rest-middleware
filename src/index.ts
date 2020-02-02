@@ -112,7 +112,7 @@ function createTypeORMMiddleware(connection: Connection, option?: { disable?: { 
     };
   });
 
-  routers.get("/scheme", async (req: Request, res: Response, next: NextFunction) => {
+  routers.get("/schema", async (req: Request, res: Response, next: NextFunction) => {
     res.json(scheme);
     next();
   });
