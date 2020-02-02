@@ -193,7 +193,7 @@ function createTypeORMMiddleware(connection, option) {
         hasDisableMethod.indexOf("ADD") > -1 || createAPI(routers, "ADD", repository, pathname, primayKeys) || paths.push({ method: "POST", path: "/" + pathname });
         hasDisableMethod.indexOf("UPDATE") > -1 || createAPI(routers, "UPDATE", repository, pathname, primayKeys) || paths.push({ method: "PATCH", path: "/" + pathname + "/:id" });
         hasDisableMethod.indexOf("REMOVE") > -1 || createAPI(routers, "REMOVE", repository, pathname, primayKeys) || paths.push({ method: "DELETE", path: "/" + pathname + "/:id" });
-        console.log("create scheme for " + name);
+        console.log("create schema for " + name);
         scheme[name] = {
             paths: paths,
             metadata: {
@@ -201,7 +201,7 @@ function createTypeORMMiddleware(connection, option) {
             }
         };
     });
-    routers.get("/scheme", function (req, res, next) { return __awaiter(_this, void 0, void 0, function () {
+    routers.get("/schema", function (req, res, next) { return __awaiter(_this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             res.json(scheme);
             next();

@@ -1,6 +1,6 @@
 {
   "name": "@xy-studio/typeorm-rest-middleware",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A express middleware to create restful api for typeORM entities.",
   "main": "build/index.js",
   "scripts": {
